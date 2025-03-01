@@ -1,0 +1,88 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <link href="https://cdn.jsdelivr.net/npm/daisyui@5" rel="stylesheet" type="text/css" />
+<script src="https://cdn.jsdelivr.net/npm/@tailwindcss/browser@4"></script>
+
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap" rel="stylesheet">
+
+
+<style>
+    .poppins-font{
+  font-family: "Poppins", sans-serif;
+}
+</style>
+
+</head>
+<body class="mx-auto w-10/12 bg-slate-100 poppins-font">
+    <header>
+        <div class="navbar bg-base-100 shadow-sm flex justify-between px-4 rounded-xl">
+
+            <div class="flex gap-3 items-center">
+             <img class="w-10" src="assets/logo.png" alt="">
+             <h2>Dev<span class="font-bold">Board</span></h2>
+            </div>
+
+            <div class="flex gap-10 items-center">
+              <div class="flex gap-3">
+                <img class="w-5 h-5" src="assets/checkbox.png" alt="">
+                <p class="font-bold">23</p>
+              </div>
+              <button class="w-8 h-8"><img src="assets/theme-btn.png" alt=""></button>
+            </div>
+
+          </div>
+    </header>
+
+    <main class="mt-4 flex">
+        <section class="flex justify-between pt-3 bg-base-100 shadow-sm w-3/4 rounded-lg">
+            <!--fast section part -->
+            <div class=" w-full flex gap-4 px-3">
+             
+                <!-- part 1 -->
+                <div class=" flex bg-slate-100 gap-4 p-7 justify-center items-center w-1/4 rounded-xl">
+                    <img class="w-5 h-5" src="assets/checkbox.png" alt="">
+                    <div>
+                        <p>Task Assigned</p>
+                        <h2 class="font-bold text-xl">05</h2>
+                    </div>
+                </div>
+
+            <!-- part 2 -->
+                <div class=" pl-5 w-2/4 bg-blue-600 flex rounded-xl items-center gap-4">
+                    <img class="w-14 h-14" src="assets/board.png" alt="">
+                    <p class="text-white">Discover Something <br> New Today!</p>
+                </div>
+
+                <!-- part 3 -->
+                <div class="flex bg-slate-100 gap-4 p-7 justify-center items-center w-1/4 rounded-xl">
+                    <img class="w-5 h-5" src="assets/calender.png" alt="">
+                    <div>
+                        <p class="text-gray-500">Wed,</p>
+                        <h2 class="font-bold text-xl">Jul 28 2025 </h2>
+                    </div>
+                </div>
+            </div>
+
+        <!-- second div part -->
+
+        </section>
+
+        <!-- side part -->
+            <section class="w-1/4 justify-center bg-base-100 ml-4 pt-2 rounded-lg">
+                <div class="flex gap-4 justify-center items-center">
+                <img class="w-4 h-4" src="assets/activity.png" alt="">
+                <h3 class="font-medium">Activity Log</h3>
+            </div>
+            
+                <button class="bg-blue-600 px-3 py-2 rounded-xl text-white mt-4 text-center">Clear History</button>
+            
+         </section>
+    </main>
+</body>
+</html>
