@@ -23,8 +23,8 @@
 
 </head>
 
-<body class="mx-auto w-10/12 bg-slate-100 poppins-font">
-    <header>
+<body class=" bg-slate-100 poppins-font">
+    <header class="mx-auto w-10/12">
         <div class="navbar bg-base-100 shadow-sm flex justify-between px-4 rounded-xl">
 
             <div class="flex gap-3 items-center">
@@ -37,13 +37,13 @@
                     <img class="w-7 h-7" src="assets/checkbox.png" alt="">
                     <p id="increment" class="font-bold text-2xl">23</p>
                 </div>
-                <button class="w-10 h-10"><img src="assets/theme-btn.png" alt=""></button>
+                <button id="change-bg-color" class="w-10 h-10"><img src="assets/theme-btn.png" alt=""></button>
             </div>
 
         </div>
     </header>
 
-    <main class="mt-4 flex">
+    <main class="mt-4 flex mx-auto w-10/12">
 
         <section class="pt-3 bg-base-100 shadow-sm w-3/4 rounded-lg">
             <!--fast section part -->
@@ -54,7 +54,7 @@
                     <img class="w-5 h-5" src="assets/checkbox.png" alt="">
                     <div>
                         <p>Task Assigned</p>
-                        <h2 id="decrement" class="font-bold text-xl">05</h2>
+                        <h2 id="decrement" class="font-medium text-xl">06</h2>
                     </div>
                 </div>
 
@@ -68,8 +68,8 @@
                 <div class="flex bg-slate-100 gap-4 p-7 justify-center items-center w-1/4 rounded-xl">
                     <img class="w-5 h-5" src="assets/calender.png" alt="">
                     <div>
-                        <p class="text-gray-500">Wed,</p>
-                        <h2 class="font-bold text-xl">Jul 28 2025 </h2>
+                        <p id="current-day" class="text-gray-500 font-medium"></p>
+                        <h2 id="current-date" class="font-medium text-xl"></h2>
                     </div>
                 </div>
             </div>
@@ -80,10 +80,10 @@
             <div class="mt-10 grid grid-cols-3 grid-rows-2 gap-4 mx-3">
 
                 <!-- box 1 -->
-                <div class="bg-slate-100 p-3 rounded-lg">
+                <div class="bg-slate-100 parrent-div-class p-3 rounded-lg">
                     <button class="bg-base-100 px-3 py-2 rounded-lg">ShopEase</button>
 
-                    <h2 class="font-medium text-xl mt-3 mb-4">Fix Mobile Button Issue</h2>
+                    <h2 class="font-medium text-xl mt-3 mb-4 box-class">Fix Mobile Button Issue</h2>
                     <p class="text-gray-500 bg-base-100 py-3 px-2">Debug using Chrome <br> DevTools, check for
                         overlappi...</p>
                     <div class="mt-4 flex justify-between">
@@ -96,10 +96,10 @@
                 </div>
 
                 <!-- box 2 -->
-                <div class="bg-slate-100 p-3 rounded-lg">
+                <div class="bg-slate-100 p-3 rounded-lg parrent-div-class">
                     <button class="bg-base-100 px-3 py-2 rounded-lg">CloudSync</button>
 
-                    <h2 class="font-medium text-xl mt-3 mb-4">Add Dark Mode</h2>
+                    <h2 class="font-medium text-xl mt-3 mb-4 box-class">Add Dark Mode</h2>
                     <p class="text-gray-500 bg-base-100 py-3 px-2">Store the user's preference in <br> localStorage,
                         update CSS vari...</p>
                     <div class="mt-4 flex justify-between">
@@ -112,10 +112,10 @@
                 </div>
 
                 <!-- box 3 -->
-                <div class="bg-slate-100 p-3 rounded-lg">
+                <div class="bg-slate-100 p-3 rounded-lg parrent-div-class">
                     <button class="bg-base-100 px-3 py-2 rounded-lg">SwiftPay</button>
 
-                    <h2 class="font-medium text-xl mt-3 mb-4">Optimize Home page</h2>
+                    <h2 class="font-medium text-xl mt-3 mb-4 box-class">Optimize Home page</h2>
                     <p class="text-gray-500 bg-base-100 py-3 px-2">Debug using Chrome <br> DevTools, check for
                         overlappi...</p>
                     <div class="mt-4 flex justify-between">
@@ -128,10 +128,10 @@
                 </div>
 
                 <!-- box 4 -->
-                <div class="bg-slate-100 p-3 rounded-lg">
+                <div class="bg-slate-100 p-3 rounded-lg parrent-div-class">
                     <button class="bg-base-100 px-3 py-2 rounded-lg">Meta</button>
 
-                    <h2 class="font-medium text-xl mt-3 mb-4">Add new emoji 🤲</h2>
+                    <h2 class="font-medium text-xl mt-3 mb-4 box-class">Add new emoji 🤲</h2>
                     <p class="text-gray-500 bg-base-100 py-3 px-2">Debug using Chrome <br> DevTools, check for
                         overlappi...</p>
                     <div class="mt-4 flex justify-between">
@@ -144,10 +144,10 @@
                 </div>
 
                 <!-- box 5 -->
-                <div class="bg-slate-100 p-3 rounded-lg">
+                <div class="bg-slate-100 p-3 rounded-lg parrent-div-class">
                     <button class="bg-base-100 px-3 py-2 rounded-lg">Google LLC</button>
 
-                    <h2 class="font-medium text-xl mt-3 mb-4">Integrate OpenAI API</h2>
+                    <h2 class="font-medium text-xl mt-3 mb-4 box-class">Integrate OpenAI API</h2>
                     <p class="text-gray-500 bg-base-100 py-3 px-2">Debug using Chrome <br> DevTools, check for
                         overlappi...</p>
                     <div class="mt-4 flex justify-between">
@@ -161,10 +161,10 @@
 
 
                 <!-- box 6 -->
-                <div class="bg-slate-100 p-3 rounded-lg">
+                <div class="bg-slate-100 p-3 rounded-lg parrent-div-class">
                     <button class="bg-base-100 px-3 py-2 rounded-lg">Glassdoar</button>
 
-                    <h2 class="font-medium text-xl mt-3 mb-4">Improve Job searching </h2>
+                    <h2 class="font-medium text-xl mt-3 mb-4 box-class">Improve Job searching </h2>
                     <p class="text-gray-500 bg-base-100 py-3 px-2">Debug using Chrome <br> DevTools, check for
                         overlappi...</p>
                     <div class="mt-4 flex justify-between">
@@ -172,7 +172,7 @@
                             <p class="text-gray-500">Deadline</p>
                             <h2 class="font-medium">21 March 2025</h2>
                         </div>
-                        <button class="px-4 py-4 rounded-lg text-white bg-blue-600 box-btn">Completed</button>
+                        <button id="target-box" class="px-4 py-4 rounded-lg text-white bg-blue-600 box-btn">Completed</button>
                     </div>
                 </div>
 
@@ -190,7 +190,7 @@
                 <h3 class="font-medium">Activity Log</h3>
             </div>
        <div class="flex justify-center">
-        <button class="bg-blue-600 px-3 py-2 rounded-xl text-white mt-4 text-center">Clear History</button>
+        <button id="clear-id" class="bg-blue-600 px-3 py-2 rounded-xl text-white mt-4 text-center">Clear History</button>
 
        </div>
        <div id="History-container">
