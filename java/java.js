@@ -33,7 +33,7 @@ for(const btn of boxBtn){
         const clicked = event.target;
 
         // new part
-        const parentBox = clicked.closest('.parrent-div-class');
+        const parentBox = event.target.closest('.parrent-div-class');
         const boxTitle = parentBox.querySelector('.box-class').innerText;
         
      const decrementValue = document.getElementById('decrement').innerText;
@@ -53,7 +53,7 @@ for(const btn of boxBtn){
        
        historyContainer.style.display = 'block';
 
-        const p = document.createElement('p');
+       
         const currentTime = new Date();
         const setTime = currentTime.toLocaleTimeString('en-us', {
             hour: '2-digit',
@@ -61,9 +61,11 @@ for(const btn of boxBtn){
             second: 'numeric',
             hour12: true
         });
+
+        const p = document.createElement('p');
         p.innerText = `
         You have completed the task ${boxTitle} at ${setTime};
-        `
+        `                                                   
         
         historyContainer.appendChild(p);
      }
@@ -71,20 +73,21 @@ for(const btn of boxBtn){
 }
 
 document.getElementById('clear-id').addEventListener('click', function(){
-    historyContainer.innerHTML = '';
+    historyContainer.innerText = '';
    historyContainer.style.display = 'none';
 })
 
-document.getElementById('change-bg-color').addEventListener('click', function(){ 
-
-    const red = Math.floor(Math.random() * 256);
-    const green = Math.floor(Math.random() * 256);
-    const blue = Math.floor(Math.random() * 256);
-
-    document.body.style.backgroundColor =  `
-    rgb(${red}, ${green}, ${blue})
-    `;
-});
+function setColor() {
+    let colorList = "0123456789ABCDEF";
+    let colorCode = "#";
+    for (let i = 0; i < 6; i++) {
+        colorCode += colorList[Math.floor(Math.random() * 16)];
+    }
+    return colorCode;
+}
+document.getElementById('change-bg-color').addEventListener('click', function () {
+    document.body.style.backgroundColor = setColor();
+})
 
 const targetBox = document.getElementById('target-box');
 const totalBox = document.querySelectorAll('.box-btn');
